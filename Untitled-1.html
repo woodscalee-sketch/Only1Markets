@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Only1Markets</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; background: #0b0b0b; color: #e6e6e6; }
+    header { background: linear-gradient(135deg, #0a0a0a, #1f1f1f); padding: 100px 20px; text-align: center; border-bottom: 2px solid #333; }
+    .logo { font-size: 4rem; font-weight: 700; letter-spacing: 2px; animation: fadeInDown 1s ease-in-out; }
+    .slogan { margin-top: 15px; font-size: 1.5rem; color: #aaa; animation: fadeInUp 1s ease-in-out; }
+
+    section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+
+    .card { background: #141414; padding: 40px; border-radius: 16px; margin-top: 40px; border: 1px solid #2a2a2a; box-shadow: 0 0 40px rgba(0,0,0,0.5); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 0 50px rgba(77,77,255,0.6); }
+    .card h2 { margin-top: 0; color: #fff; }
+
+    ul { line-height: 2; }
+
+    .btn { display: inline-block; margin-top: 20px; padding: 16px 30px; background: #4d4dff; color: #fff; text-decoration: none; border-radius: 12px; font-weight: 700; transition: 0.25s; box-shadow: 0 0 20px rgba(77,77,255,0.5); }
+    .btn:hover { background: #6b6bff; transform: scale(1.1); box-shadow: 0 0 30px rgba(77,77,255,0.8); }
+
+    .hero { text-align: center; padding: 100px 20px; animation: fadeIn 1.5s ease-in-out; }
+    .hero h1 { font-size: 3.5rem; margin-bottom: 20px; }
+    .hero p { font-size: 1.5rem; color: #bbb; margin-bottom: 30px; }
+
+    /* Animations */
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); }}
+    @keyframes fadeInDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); }}
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); }}
+
+    /* Navbar */
+    nav { display: flex; justify-content: center; gap: 40px; padding: 20px 0; background: #0d0d0d; position: sticky; top: 0; z-index: 1000; }
+    nav a { color: #e6e6e6; text-decoration: none; font-weight: 600; transition: color 0.2s; }
+    nav a:hover { color: #4d4dff; }
+
+    /* Footer */
+    footer { text-align: center; padding: 40px 20px; background: #0d0d0d; color: #888; margin-top: 60px; }
+
+    /* Booking Calendar */
+    .calendar { margin-top: 30px; text-align: center; border-radius: 12px; overflow: hidden; }
+
+    /* Animated counters */
+    .counters { display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 40px; }
+    .counter { font-size: 2rem; margin: 20px; text-align: center; }
+    .counter span { color: #4d4dff; font-weight: 700; }
+
+    /* Responsive */
+    @media(max-width:768px) { .hero h1 { font-size: 2.4rem; } .hero p { font-size: 1.1rem; } .counters { flex-direction: column; align-items: center; } }
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- HERO -->
+  <header>
+    <div class="logo">Only1Markets</div>
+    <p class="slogan">Scaling Businesses Through Content • Ads • Systems</p>
+  </header>
+
+  <!-- HERO CTA -->
+  <section class="hero">
+    <h1>Grow Your Business Fast & Consistently</h1>
+    <p>Content • Paid Ads • Full Digital Optimization</p>
+    <a href="#contact" class="btn">Book a Free Audit</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="card">
+      <h2>About Me</h2>
+      <p>I help businesses grow through short‑form content, paid ads, and brand optimization. My mission is simple: help businesses dominate their local market and generate consistent customers.</p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="card">
+      <h2>Services</h2>
+      <ul>
+        <li>Short‑form content creation (Reels/TikTok)</li>
+        <li>Social media management</li>
+        <li>Brand audits & optimization</li>
+        <li>Paid ads management</li>
+        <li>Content calendars & strategy development</li>
+        <li>Full digital growth systems</li>
+      </ul>
+      <a href="#contact" class="btn">Request a Free Audit</a>
+    </div>
+  </section>
+
+  <!-- ANIMATED COUNTERS -->
+  <section class="counters">
+    <div class="counter">Clients Served: <span id="clients">0</span></div>
+    <div class="counter">Leads Generated: <span id="leads">0</span></div>
+    <div class="counter">Projects Completed: <span id="projects">0</span></div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section>
+    <div class="card">
+      <h2>Client Results</h2>
+      <ul>
+        <li>"Grew our leads by 3× in 30 days — crazy results."</li>
+        <li>"Best content we’ve ever had, period."</li>
+        <li>"We went from invisible to fully booked for 2 weeks."</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing">
+    <div class="card">
+      <h2>Pricing</h2>
+      <ul>
+        <li><strong>Content Plan:</strong> $500–$1,000/mo</li>
+        <li><strong>Ads Management:</strong> $750–$2,000/mo</li>
+        <li><strong>Full Growth System:</strong> $1,500–$4,000/mo</li>
+      </ul>
+      <p style="color:#bbb;">*Prices vary depending on workload & goals*</p>
+    </div>
+  </section>
+
+  <!-- BOOKING CALENDAR -->
+  <section id="booking">
+    <div class="card calendar">
+      <h2>Book a Call</h2>
+      <iframe src="https://calendar.google.com/calendar/embed?src=yourcalendarid%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="card">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> only1.scales@gmail.com</p>
+      <p><strong>Instagram:</strong> Only1._32</p>
+      <p><strong>Phone:</strong> 470‑522‑7238</p>
+      <a class="btn" href="mailto:only1.scales@gmail.com">Email Me</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2025 Only1Markets. All rights reserved.
+  </footer>
+
+  <script>
+    // Animated counters
+    const counters = { clients: 120, leads: 450, projects: 75 };
+    for (const id in counters) {
+      let count = 0;
+      const target = counters[id];
+      const el = document.getElementById(id);
+      const interval = setInterval(() => {
+        count += Math.ceil(target / 100);
+        if(count >= target) { count = target; clearInterval(interval); }
+        el.textContent = count;
+      }, 20);
+    }
+  </script>
+</body>
+</html>
